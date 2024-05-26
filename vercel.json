@@ -4,6 +4,7 @@
         "src": "index.py",
         "use": "@vercel/python",
         "config": {
+          "pythonVersion": "3.9",
           "zeroConfig": true
         }
       }
@@ -16,3 +17,4 @@
     ],
     "buildCommand": "bash .vercel/build.sh"
   }
+  
