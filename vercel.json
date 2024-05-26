@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "api/main.py",
+        "src": "index.py",
         "use": "@vercel/python",
         "config": {
           "zeroConfig": true
@@ -11,7 +11,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "api/main.py"
+        "dest": "api/index.py"
       }
     ],
     "buildCommand": "bash .vercel/build.sh"
